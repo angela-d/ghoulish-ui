@@ -1,0 +1,61 @@
+atom-text-editor[mini] {
+  line-height: @component-line-height;
+  max-height: @component-line-height + 2; // +2 for borders
+
+  overflow: auto;
+}
+atom-text-editor,
+editor {
+  background-color: @app-background-color;
+}
+
+atom-text-editor,
+.tile,:host{
+  background-color:  transparent ;
+}
+atom-text-editor,
+atom-text-editor.editor {
+  .scroll-view {
+  background-color:   @app-background-color !important ;
+
+  }
+  .gutter {
+  background-color:   @app-background-color !important ;
+
+  }
+}
+
+atom-text-editor[mini] {
+  font-size: @ui-input-size;
+  line-height: @ui-line-height;
+  max-height: none;
+  padding-left: 0;
+  border-radius: @component-border-radius;
+  color: @text-color-highlight;
+  border: 1px solid @input-border-color;
+  background-color: @input-background-color;
+  padding-left: @ui-padding/2;
+
+  &,
+  &.editor {
+    .placeholder-text {
+      color: @text-color-subtle;
+    }
+    .selection .region {
+      background-color: @input-selection-color;
+    }
+    .cursor {
+      border-color: @base-accent-color;
+      border-width: 2px;
+    }
+  }
+
+  &.is-focused,
+  &.is-focused.editor {
+    .focus();
+    background-color: @input-background-color-focus;
+    .selection .region {
+      background-color: @input-selection-color-focus;
+    }
+  }
+}

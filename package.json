@@ -1,0 +1,29 @@
+{
+  "dependencies": {},
+  "description": "Dark theme forked from Steam Pirate UI; with a custom background image.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">1.25.0"
+  },
+  "homepage": "https://github.com/angela-d/ghoulish-ui",
+  "keywords": [
+    "dark",
+    "ui",
+    "neon",
+    "background",
+    "image",
+    "creepy",
+    "steam pirate ui"
+  ],
+  "license": "MIT",
+  "main": "lib/settings",
+  "name": "ghoulish-ui",
+  "optionalDependencies": {},
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angela-d/ghoulish-ui.git"
+  },
+  "theme": "ui",
+  "version": "0.0.1"
+}
