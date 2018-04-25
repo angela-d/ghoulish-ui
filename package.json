@@ -22,7 +22,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angela-d/ghoulish-ui.git"
+    "url": "https://github.com/angela-d/ghoulish-ui.git"
   },
   "theme": "ui",
   "version": "0.1.0"
