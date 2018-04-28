@@ -32,6 +32,13 @@ module.exports =
       type: 'string'
       default: 'atom://ghoulish-ui/imgs/zombie.jpg'
 
+    fileIcons:
+      title: "Custom File Type Icons"
+      order: 9
+      description: "Disable this if you are already using a file icon package (or simply don't want custom icons)"
+      type: "boolean"
+      default: true
+
   activate: (state) ->
     atom.themes.onDidChangeActiveThemes ->
       Config = require './config'

@@ -1,5 +1,5 @@
 
-// Atom UI Theme: One
+// Atom UI Theme: Ghoulish UI
 
 @import (reference) "styles/ui-variables";
 @import (reference) "styles/ui-mixins";
@@ -29,3 +29,13 @@
 @import "styles/packages";
 @import "styles/core";
 @import "styles/config";
+
+.icons(@icons) when (@icons = true) {
+  @import "styles/icons";
+}
+/**
+ * Set below to false to not import file icons.
+ * Requries View -> Reload after changing value.
+ * Mainly to use with file-icons package.
+*/
+.icons(true);
