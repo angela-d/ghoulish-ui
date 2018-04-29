@@ -1,6 +1,6 @@
 {
   "dependencies": {},
-  "description": "Dark, bold & colorful theme with file type icons and a custom background image.",
+  "description": "Dark, bold & colorful theme with file type icons and a customizable background image.",
   "devDependencies": {},
   "engines": {
     "atom": ">1.19.0"
