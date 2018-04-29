@@ -50,7 +50,7 @@
 // Text -----------------
 @text-color:            @ui-fg;
 @text-color-subtle:     fadeout(@text-color, 30%);
-@text-color-highlight:  saturate( lighten(@text-color, 30%), 50%);
+@text-color-highlight:  saturate( lighten(@text-color, 30%), 90%);
 @text-color-selected:   white;
 
 @text-color-info:    hsl(219,  79%, 66%);
@@ -65,7 +65,7 @@
 @background-color-warning: hsl(32,   60%, 50%);
 @background-color-error:   hsl(0,    70%, 50%);
 
-@background-color-highlight: lighten(@base-background-color, 40%);
+@background-color-highlight: lighten(@base-background-color, 90%);
 @background-color-selected:  lighten(@base-background-color, 40%);
 
 @app-background-color: @level-3-color;
@@ -155,7 +155,7 @@
 
 
 // Background (Custom) -----------------
-@level-1-color: lighten(@base-background-color, 6%);
+@level-1-color: lighten(@base-background-color, 26%);
 @level-2-color: @base-background-color;
 @level-3-color: darken(@base-background-color, 3%);
 
@@ -173,7 +173,7 @@
 @checkbox-background-color:         fade(@base-accent-color, 33%);
 
 @input-background-color-focus:      fadein(@input-background-color, 6%);
-@input-selection-color:             darken(@background-color-selected, 6%);
+@input-selection-color:             darken(@background-color-selected,  6%);
 @input-selection-color-focus:       @background-color-selected;
 
 @key-binding-border-color:          hsla(0,0%,100%,.1);
