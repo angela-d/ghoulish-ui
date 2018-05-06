@@ -2,7 +2,6 @@
 
 .tree-view {
   font-size: @ui-size;
-  background: @tree-view-background-color;
 
   .project-root.project-root {
     padding-top: @ui-padding-pane;
@@ -17,7 +16,8 @@
 
   .selected:before {
     background-color: rgba(0,0,0,0);
-    box-shadow: inset 0px 0px 15px 0px rgba(0,120,200,0.5);
+    box-shadow: inset 0px 0px 15px 0px rgba(0,120,200,0.9);
+    border-radius: 5px;
   }
 }
 
@@ -113,7 +113,7 @@
   width: 16px;
   height: 16px;
   color: lightblue;
-  text-shadow: 0px 0px 20px @blue;
+  text-shadow: @text-icon-bg;
 
 }
 
@@ -124,7 +124,7 @@
 [data-name='Cakefile']:before {
   content: '\f010';
   color: @green;
-  text-shadow: 0px 0px 5px @green;
+  text-shadow: @text-icon-bg;
 }
 
 // Meta configuration files
@@ -140,13 +140,13 @@
 [data-name$='.ruby-version']:before {
   content: '\f02f';
   color: @magenta;
-  text-shadow: 0px 0px 5px @background-color-highlight;
+  text-shadow: @text-icon-bg;
 }
 
 // GIT repo
 [data-name$='.git']:before {
   content: '\f00a';
-  text-shadow: 0px 0px 5px @background-color-highlight;
+  text-shadow: @text-icon-bg;
 }
 
 
@@ -154,14 +154,14 @@
 [data-name$='.map']:before {
   content: '\f060';
   color: @orange;
-  text-shadow: 0px 0px 5px @orange;
+  text-shadow: @text-icon-bg;
 }
 
 // Lock files
 [data-name$='.lock']:before {
   content: '\f06a';
   color: @yellow;
-  text-shadow: 0px 0px 5px @yellow;
+  text-shadow: @text-icon-bg;
 }
 
 // Ruby files
@@ -175,7 +175,7 @@
 [data-name='Capfile']:before {
   color: @red;
   content: '\f047';
-  text-shadow: 0px 0px 5px @red;
+  text-shadow: @text-icon-bg;
 }
 
 
@@ -184,7 +184,7 @@
  [data-name$='.ipynb']:before, {
    color: @blue;
    content: '\f011';
-   text-shadow: 0px 0px 8px @blue;
+   text-shadow: @text-icon-bg;
  }
 
 // Stylesheets
@@ -195,7 +195,7 @@
 [data-name$='.less']:before {
   content: '\f058';
   color: @blue;
-  text-shadow: 0px 0px 5px @blue;
+  text-shadow: @text-icon-bg;
 }
 
 // Archives
@@ -204,7 +204,7 @@
 [data-name$='.gz']:before {
   content: '\f013';
   color: @cyan;
-  text-shadow: 0px 0px 5px @cyan;
+  text-shadow: @text-icon-bg;
 }
 
 // Templates
@@ -214,7 +214,7 @@
 [data-name$='.hbs']:before {
   content: '\f05f';
   color: @yellow;
-  text-shadow: 0px 0px 5px @yellow;
+  text-shadow: @text-icon-bg;
 }
 
 // In project configuration files
@@ -223,14 +223,14 @@
 [data-name$='.yml']:before  {
   content: '\f07c';
   color: @violet;
-  text-shadow: 0px 0px 5px @violet;
+  text-shadow: @text-icon-bg;
 }
 
 // DS_Store
 [data-name$='.DS_Store']:before,
 [data-name*='.sublime-']:before {
   content: '\f02f';
-  text-shadow: 0px 0px 5px @red;
+  text-shadow: @text-icon-bg;
 }
 
 // License files
@@ -241,7 +241,7 @@
 [data-name^='License']:before,
 [data-name^='History']:before {
   color: #78b4c4;
-  text-shadow: 0px 0px 5px #78b4c4;
+  text-shadow: @text-icon-bg;
 
 }
 
@@ -249,7 +249,7 @@
 [data-name$='.pdf']:before {
   content: '\f014';
   color: @orange;
-  text-shadow: 0px 0px 5px @orange;
+  text-shadow: @text-icon-bg;
 }
 
 // Log files
@@ -257,7 +257,7 @@
 [data-name$='.log']:before {
   content: '\f091';
   color: @orange;
-  text-shadow: 0px 0px 5px @orange;
+  text-shadow: @text-icon-bg;
 }
 
 // Database & dumps
@@ -267,7 +267,7 @@
 [data-name$='.dump']:before {
   content: '\f096';
   color: @cyan;
-  text-shadow: 0px 0px 5px @cyan;
+  text-shadow: @text-icon-bg;
 }
 
 // Fonts files
@@ -277,14 +277,14 @@
 [data-name$='.eot']:before {
   content: '\f05e';
   color: @blue;
-  text-shadow: 0px 0px 5px @blue;
+  text-shadow: @text-icon-bg;
 }
 
 // HTML files
 [data-name$='.html']:before {
   content: "\f0b6";
   color: #5cb5db;
-  text-shadow: 0px 0px 5px #5cb5db;
+  text-shadow: @text-icon-bg;
 }
 
 // Ctags files
@@ -295,7 +295,7 @@
 [data-name='TAGS']:before {
   content: '\f015';
   color: @blue;
-  text-shadow: 0px 0px 5px @blue;
+  text-shadow: @text-icon-bg;
 }
 
 
@@ -304,7 +304,7 @@
 {
   content: '\f011';
   color: #90c276;
-  text-shadow: 0px 0px 5px @background-color-highlight;
+  text-shadow: @text-icon-bg;
 }
 
 // Images files
@@ -316,7 +316,7 @@
 [data-name$='.ico']:before {
   content: '\f012';
   color: @green;
-  text-shadow: 0px 0px 5px @green;
+  text-shadow: @text-icon-bg;
 }
 
 // Videos files
@@ -328,20 +328,20 @@
 [data-name$='.ogg']:before {
   content: '\f057';
   color: @orange;
-  text-shadow: 0px 0px 5px @orange;
+  text-shadow: @text-icon-bg;
 }
 
 // Markdown files
 [data-name$='.md']:before {
   content: '\f0c9';
-  text-shadow: 0px 0px 5px @background-color-highlight;
+  text-shadow: @text-icon-bg;
 }
 
 // Todos
 [data-name*='todo']:before {
   content: '\f076';
   color: @cyan;
-  text-shadow: 0px 0px 5px @cyan;
+  text-shadow: @text-icon-bg;
 }
 
 // Shell scripts
@@ -350,5 +350,5 @@
 [data-name$='.bat']:before {
   content: '\f0c8';
   color: @magenta;
-  text-shadow: 0px 0px 5px @magenta;
+  text-shadow: @text-icon-bg;
 }
