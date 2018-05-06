@@ -22,7 +22,7 @@ module.exports =
 
     blurBackground:
       title: 'Blur Background'
-      description: 'Blurs the background with given blur Radius, set 0 to disable'
+      description: 'Blurs the background with given blur radius; set 0 to disable'
       type: 'string'
       default: "0"
 
@@ -34,12 +34,16 @@ module.exports =
 
     fileIcons:
       title: "Custom File Type Icons"
-      order: 9
       description: "Disable this if you are already using a file icon package (or simply don't want custom icons)"
       type: "boolean"
       default: true
 
+    treeViewGlow:
+      title: 'Tree View Glow'
+      description: 'Gradient color of the tree view background'
+      type: 'color'
+      default: '#133441'
+
   activate: (state) ->
-    atom.themes.onDidChangeActiveThemes ->
-      Config = require './config'
-      Config.apply()
+    ghoulish = require './config'
+    ghoulish.apply()
