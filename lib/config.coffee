@@ -7,7 +7,6 @@ module.exports =
     style.type = 'text/css'
     document.querySelector('head atom-styles').appendChild(style)
 
-
     # Font Size
     setFontSize = (currentFontSize) ->
       if Number.isInteger(currentFontSize)
@@ -33,6 +32,16 @@ module.exports =
         blurRadiusRule = style.sheet.rules.length
       style.sheet.insertRule(rule, blurRadiusRule)
 
+    setTreeViewGlow = (treeViewGlow) ->
+      rule = ".tree-view { background: linear-gradient(to bottom, #000000 0%, #{treeViewGlow} 100%); }"
+
+      if treeViewGlowRule isnt null
+        style.sheet.deleteRule(treeViewGlowRule)
+      else
+        treeViewGlowRule = style.sheet.rules.length
+      style.sheet.insertRule(rule, treeViewGlowRule)
+
+
     setBackgroundImage = (backgroundImage) ->
       rule = "body:before{ background-image: url( #{backgroundImage} );}"
       if bgImageRule isnt null
@@ -43,6 +52,7 @@ module.exports =
 
     setLayoutMode(atom.config.get('ghoulish-ui.layoutMode'))
     setBlurRadius(atom.config.get('ghoulish-ui.blurBackground'))
+    setTreeViewGlow(atom.config.get('ghoulish-ui.treeViewGlow'))
     setBackgroundImage(atom.config.get('ghoulish-ui.backgroundImage'))
 
     atom.config.onDidChange 'ghoulish-ui.layoutMode', ->
@@ -50,6 +60,9 @@ module.exports =
 
     atom.config.onDidChange 'ghoulish-ui.blurBackground', ->
       setBlurRadius(atom.config.get('ghoulish-ui.blurBackground'))
+
+    atom.config.onDidChange 'ghoulish-ui.treeViewGlow', ->
+      setTreeViewGlow(atom.config.get('ghoulish-ui.treeViewGlow'))
 
     atom.config.onDidChange 'ghoulish-ui.backgroundImage', ->
       setBackgroundImage(atom.config.get('ghoulish-ui.backgroundImage'))
