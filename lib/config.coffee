@@ -1,5 +1,6 @@
 style = document.createElement 'style'
 blurRadiusRule = null
+treeViewGlowRule = null
 bgImageRule = null
 module.exports =
   apply: ->
@@ -26,7 +27,7 @@ module.exports =
 
     setBlurRadius = (blurRadius) ->
       rule = "body:before{ -webkit-filter: blur( #{blurRadius}px );}"
-      if blurRadiusRule isnt null
+      if blurRadiusRule is not null
         style.sheet.deleteRule(blurRadiusRule)
       else
         blurRadiusRule = style.sheet.rules.length
@@ -34,8 +35,7 @@ module.exports =
 
     setTreeViewGlow = (treeViewGlow) ->
       rule = ".tree-view { background: linear-gradient(to bottom, #000000 0%, #{treeViewGlow} 100%); }"
-
-      if treeViewGlowRule isnt null
+      if treeViewGlowRule is not null
         style.sheet.deleteRule(treeViewGlowRule)
       else
         treeViewGlowRule = style.sheet.rules.length
@@ -44,7 +44,7 @@ module.exports =
 
     setBackgroundImage = (backgroundImage) ->
       rule = "body:before{ background-image: url( #{backgroundImage} );}"
-      if bgImageRule isnt null
+      if bgImageRule is not null
         style.sheet.deleteRule(bgImageRule)
       else
         bgImageRule = style.sheet.rules.length
