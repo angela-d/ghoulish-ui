@@ -2,7 +2,7 @@
 
 | Changes | Release |
 | -- | -- |
-| <ul><li>Remove redundant code</li><li>Notification text color adjustment</ul> | 1.0.6 |
+| <ul><li>Remove redundant code</li><li>Notification text color adjustment</ul> | 1.0.7 |
 | Theme switch autoload bugfix | 1.0.5 |
 | Various visual improvements & highlighting | 1.0.4 |
 | <ul><li>Lighten super dark elements</li><li>Adjust glow over file type icons</li><li>Bugfix & colorized Git repo</li></ul> | 1.0.3 |
