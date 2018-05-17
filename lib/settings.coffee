@@ -32,12 +32,6 @@ module.exports =
       type: 'string'
       default: 'atom://ghoulish-ui/imgs/zombie.jpg'
 
-    fileIcons:
-      title: "Custom File Type Icons"
-      description: "Disable this if you are already using a file icon package (or simply don't want custom icons)"
-      type: "boolean"
-      default: true
-
     treeViewGlow:
       title: 'Tree View Glow'
       description: 'Gradient color of the tree view background'
