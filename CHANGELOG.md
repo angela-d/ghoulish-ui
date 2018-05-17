@@ -2,6 +2,7 @@
 
 | Changes | Release |
 | -- | -- |
+| Residual code removed | 1.0.8 |
 | <ul><li>Remove redundant code</li><li>Notification text color adjustment</ul> | 1.0.7 |
 | Theme switch autoload bugfix | 1.0.5 |
 | Various visual improvements & highlighting | 1.0.4 |
