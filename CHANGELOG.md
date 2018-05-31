@@ -2,6 +2,7 @@
 
 | Changes | Release |
 | -- | -- |
+| <ul><li>Tree view custom background image setting added</li><li>[Tree view hover](https://github.com/atom/one-dark-ui/pull/263) added via upstream PR</ul>  | 1.1.0 |
 | Residual code removed | 1.0.8 |
 | <ul><li>Remove redundant code</li><li>Notification text color adjustment</ul> | 1.0.7 |
 | Theme switch autoload bugfix | 1.0.5 |
