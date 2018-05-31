@@ -1,6 +1,6 @@
 style = document.createElement 'style'
 blurRadiusRule = null
-treeViewGlowRule = null
+tvBgImageRule = null
 bgImageRule = null
 module.exports =
   apply: ->
@@ -33,14 +33,13 @@ module.exports =
         blurRadiusRule = style.sheet.rules.length
       style.sheet.insertRule(rule, blurRadiusRule)
 
-    setTreeViewGlow = (treeViewGlow) ->
-      rule = ".tree-view { background: linear-gradient(to bottom, #000000 0%, #{treeViewGlow} 100%); }"
-      if treeViewGlowRule is not null
-        style.sheet.deleteRule(treeViewGlowRule)
+    setTreeViewBackgroundImage = (treeViewBackgroundImage) ->
+      rule = ".tree-view{ background-image: url( #{treeViewBackgroundImage} );}"
+      if tvBgImageRule is not null
+        style.sheet.deleteRule(tvBgImageRule)
       else
-        treeViewGlowRule = style.sheet.rules.length
-      style.sheet.insertRule(rule, treeViewGlowRule)
-
+        tvBgImageRule = style.sheet.rules.length
+      style.sheet.insertRule(rule, tvBgImageRule)
 
     setBackgroundImage = (backgroundImage) ->
       rule = "body:before{ background-image: url( #{backgroundImage} );}"
@@ -52,7 +51,7 @@ module.exports =
 
     setLayoutMode(atom.config.get('ghoulish-ui.layoutMode'))
     setBlurRadius(atom.config.get('ghoulish-ui.blurBackground'))
-    setTreeViewGlow(atom.config.get('ghoulish-ui.treeViewGlow'))
+    setTreeViewBackgroundImage(atom.config.get('ghoulish-ui.treeViewBackgroundImage'))
     setBackgroundImage(atom.config.get('ghoulish-ui.backgroundImage'))
 
     atom.config.onDidChange 'ghoulish-ui.layoutMode', ->
@@ -61,8 +60,8 @@ module.exports =
     atom.config.onDidChange 'ghoulish-ui.blurBackground', ->
       setBlurRadius(atom.config.get('ghoulish-ui.blurBackground'))
 
-    atom.config.onDidChange 'ghoulish-ui.treeViewGlow', ->
-      setTreeViewGlow(atom.config.get('ghoulish-ui.treeViewGlow'))
+    atom.config.onDidChange 'ghoulish-ui.treeViewBackgroundImage', ->
+      setTreeViewBackgroundImage(atom.config.get('ghoulish-ui.treeViewBackgroundImage'))
 
     atom.config.onDidChange 'ghoulish-ui.backgroundImage', ->
       setBackgroundImage(atom.config.get('ghoulish-ui.backgroundImage'))
