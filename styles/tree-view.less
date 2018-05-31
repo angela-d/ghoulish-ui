@@ -21,6 +21,15 @@
   }
 }
 
+/* tree view hover courtesy of upstream PR by @abaracedo: https://github.com/atom/one-dark-ui/pull/263 */
+.file:not(.selected),
+.directory:not(.selected) > .header {
+  &:hover {
+    background: @overlay-background-color;
+    cursor: pointer;
+  }
+}
+
 .theme-ghoulish-ui .tree-view .project-root.project-root::before {
   border-top: 1px solid transparent;
   background-clip: padding-box;
