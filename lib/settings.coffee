@@ -32,11 +32,11 @@ module.exports =
       type: 'string'
       default: 'atom://ghoulish-ui/imgs/zombie.jpg'
 
-    treeViewGlow:
-      title: 'Tree View Glow'
-      description: 'Gradient color of the tree view background'
-      type: 'color'
-      default: '#133441'
+    treeViewBackgroundImage:
+      title: 'Tree View Background Image'
+      description: 'Path to the background image (shown in the tree view side bar)'
+      type: 'string'
+      default: 'atom://ghoulish-ui/imgs/tree.jpg'
 
   activate: (state) ->
     ghoulish = require './config'
