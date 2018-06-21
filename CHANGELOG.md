@@ -2,13 +2,14 @@
 
 | Changes | Release |
 | -- | -- |
-| <ul><li>Tree view custom background image setting added</li><li>[Tree view hover](https://github.com/atom/one-dark-ui/pull/263) added via upstream PR</ul>  | 1.1.0 |
+| Fix disappearing scrollbars | 1.1.0~patch |
+| Tree view custom background image setting added, [Tree view hover](https://github.com/atom/one-dark-ui/pull/263) added via upstream PR  | 1.1.0 |
 | Residual code removed | 1.0.8 |
-| <ul><li>Remove redundant code</li><li>Notification text color adjustment</ul> | 1.0.7 |
+| Remove redundant code, Notification text color adjustment| 1.0.7 |
 | Theme switch autoload bugfix | 1.0.5 |
 | Various visual improvements & highlighting | 1.0.4 |
-| <ul><li>Lighten super dark elements</li><li>Adjust glow over file type icons</li><li>Bugfix & colorized Git repo</li></ul> | 1.0.3 |
-| <ul><li>File type icons added</li><li>Active tab color added, to differentiate windows</li><li>Tooltip & settings appearance enhancements</li></ul> | 1.0.0 |
+| Lighten super dark elements, Adjust glow over file type icons, Bugfix & colorized Git repo | 1.0.3 |
+| File type icons added, Active tab color added, to differentiate windows, Tooltip & settings appearance enhancements | 1.0.0 |
 | added additional screenshot | 0.4.0 |
 | apm bugfix | 0.3.0 |
-| <ul><li>Public beta release</li><li>Merged open PR from [dallinb](https://github.com/dallinb) into Ghoulish from Steam Pirate UI</li></ul> | 0.2.0 |
+| Public beta release, Merged open PR from [dallinb](https://github.com/dallinb) into Ghoulish from Steam Pirate UI | 0.2.0 |
