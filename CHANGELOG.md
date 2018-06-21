@@ -2,7 +2,7 @@
 
 | Changes | Release |
 | -- | -- |
-| Fix disappearing scrollbars | 1.1.0~patch |
+| Fix disappearing scrollbars | 1.1.1 |
 | Tree view custom background image setting added, [Tree view hover](https://github.com/atom/one-dark-ui/pull/263) added via upstream PR  | 1.1.0 |
 | Residual code removed | 1.0.8 |
 | Remove redundant code, Notification text color adjustment| 1.0.7 |
