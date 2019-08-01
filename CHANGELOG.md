@@ -2,7 +2,7 @@
 
 | Changes | Release |
 | -- | -- |
-| Readme update only | 1.1.2 |
+| Readme update only | 1.1.3 |
 | Fix disappearing scrollbars | 1.1.1 |
 | Tree view custom background image setting added, [Tree view hover](https://github.com/atom/one-dark-ui/pull/263) added via upstream PR  | 1.1.0 |
 | Residual code removed | 1.0.8 |
