@@ -9,7 +9,7 @@
 * Glowing tab highlight with active page glow, to differentiate windows
 * Glowing selection on tree view
 * Translucent backgrounds that adapt to the color scheme of the syntax theme
-* Customizable background image
+* Customizable background and tree images
 * Highlighted git branch
 * Customizable font size
 
@@ -35,6 +35,18 @@ apm install ghoulish-ui
 ![ghoulish screenshot 2](./imgs/ghoulish.png)
 
 ![ghoulish screenshot](./imgs/ghoulish2.png)
+
+### Background Size
+For best appearance, use a background that matches the scale of your desktop resolution.
+
+For example, if your screen resolution is set to 1920 x 1080, also select a background of the same size.
+
+### Image Path
+You do not have to use the `atom://` prefix for your image (unless your image is stored in the Atom config directory, which I wouldn't recommend.)
+
+The image can be stored anywhere on your computer, but make sure its kept locally, on the same drive (or an accessible mount/partition that Atom has at least read access to).
+
+For best results, get the folder path from your file manager's address bar and append the filename (with extension: .png, .jpg, etc.).
 
 ### If you want to disable file type icons
 In `index.less` change:
